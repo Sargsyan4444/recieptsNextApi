@@ -20,7 +20,7 @@ function Card({
       <img className="w-[400px] rounded-2xl h-[300px]  object-cover" src={image} alt={name} />
       <div className="flex flex-col gap-3 pt-3">
       <h2>
-        <Link className="text-white font-bold text-3xl hover:text-black" href="">{name}</Link>
+        <Link className="text-white font-bold text-3xl hover:text-black" href={`reciepts/${id}`}>{name}</Link>
       </h2>
 
       <p><strong className="font-medium text-amber-50 ">Meal Types:</strong></p>
