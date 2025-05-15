@@ -4,10 +4,10 @@ import { menuItems } from "./nav-items";
 function Nav() {
     return (
         <nav>
-            <ul>
+            <ul className="flex gap-6 items-center">
                 {menuItems.map((elm) => (
                     <li key={elm.id}>
-                        <Link href={elm.href}>{elm.title}</Link>
+                        <Link className="text-orange-400 text-[21px] font-bold" href={elm.href}>{elm.title}</Link>
                     </li>
                 ))}
             </ul>
